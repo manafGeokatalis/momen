@@ -1,14 +1,11 @@
-import Login from './views/Login'
+import TopNavBar from './components/top-nav-bar';
 import { Outlet } from "react-router-dom";
 
 function App() {
   
-  let element = <Login />
-  let outt = <Outlet/>
-  
-
   return (
     <>
+      <TopNavBar/>
       <Outlet/>
     </>
   )

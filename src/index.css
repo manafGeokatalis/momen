@@ -8,3 +8,7 @@
     @apply text-[57px] text-primary text-center;
 }
 
+
+.base-100 {
+    background-color: "#fef7ff";
+}

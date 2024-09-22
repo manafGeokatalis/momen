@@ -19,7 +19,7 @@ function Login() {
                 </div>
             </form>
              <div className="flex flex-col items-center gap-3 w-full">
-             <button type='submit' htmlFor='login' className='btn btn-secondary w-full'>Masuk</button>
+             <Link to={'/'} type='submit' htmlFor='login' className='btn btn-secondary w-full'>Masuk</Link>
              <Link to={'/register'} className='text-secondary text-md text-center font-semibold ' href="#">Belum punya akun? Daftar di sini</Link>
              </div>
              <button htmlFor='login' className='btn btn-ghost btn-wide'>Lupa Kata Sandi</button>

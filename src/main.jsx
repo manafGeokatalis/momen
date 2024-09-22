@@ -10,24 +10,31 @@ import App from "./App";
 import Login from './views/Login';
 import Register from './views/Register';
 import ErrorPage from "./error-page";
-import {default as Index } from "./views/Index";
+import Home from './views/Home';
+import Profil from './views/Profil';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
-      { index: true, element: <Index /> },
+      { index: true, element: <Home /> },
       {
-        path: "/register",
-        element: <Register />,
-      },
-      {
-        path: "/login",
-        element: <Login />,
+        path: "/profil",
+        element: <Profil />,
       }
     ],
   },
+  {
+    path: "/register",
+    element: <Register />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
+    errorElement: <ErrorPage />,
+  }
   
 ]);
 
